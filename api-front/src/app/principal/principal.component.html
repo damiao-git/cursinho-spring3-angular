@@ -1,0 +1,34 @@
+<form action="">
+
+<img src="assets/cliente.png" alt="Imagem do cliente">
+
+<input type="text" placeholder="Nome" class="form-control">
+<input type="number" placeholder="Idade" class="form-control">
+<input type="text" placeholder="Cidade" class="form-control">
+
+<input type="button" value="Cadastrar" *ngIf="btnCadastro" class="btn btn-primary">
+<input type="button" value="Alterar"  *ngIf="!btnCadastro" class="btn btn-warning">
+<input type="button" value="Remover"  *ngIf="!btnCadastro" class="btn btn-danger">
+<input type="button" value="Cancelar"  *ngIf="!btnCadastro" class="btn btn-secondary">
+</form>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Cidade</th>
+      <th>Selecionar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Damião</td>
+      <td>27</td>
+      <td>Águas Lindas</td>
+      <td><input type="checkbox" name="teste" id="teste"></td>
+    </tr>
+  </tbody>
+</table>
