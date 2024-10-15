@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 // Estrutura da classe
 @RestController
+@RequestMapping("/api/cursinho")
 @CrossOrigin(origins = "*")
 public class Controle {
 
